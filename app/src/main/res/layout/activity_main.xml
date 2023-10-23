@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Mã Sinh Viên: "
+            android:textColor="#000000"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/txtMSSV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Mã sinh viên ">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Họ và tên: "
+            android:textColor="#000000"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/txtHoten"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Họ và tên ">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Năm Sinh: "
+            android:textColor="#000000"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/txtNamSinh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Năm sinh"
+            android:inputType="number">
+
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGuiThongTin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:text="Gửi thông tin"
+        android:textColor="#FF5722"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:background="#1BBF90"
+        android:gravity="center|center_horizontal"
+        android:text="Edit"
+        android:textAlignment="center"
+        android:textColor="#FFC107"
+        android:textColorHighlight="#F31B1B"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </Button>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@color/design_default_color_secondary"
+        android:minHeight="100dp"
+        tools:minHeight="100dp"></ListView>
+</LinearLayout>
